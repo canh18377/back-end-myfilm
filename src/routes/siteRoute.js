@@ -1,0 +1,10 @@
+const express = require("express");
+const router = express.Router();
+const SiteController = require("../app/Controller/SiteController");
+router.post("/likeVideos", SiteController.likeVideos);
+router.post("/handleFollow", SiteController.handleFollow);
+router.get("/following/:author/:lastVideo", SiteController.following);
+router.get("/likedVideoHome/:author/:idVideo", SiteController.getVideoTym);
+router.get("/listFollow/:author", SiteController.getListFollow);
+router.get("/", SiteController.home);
+module.exports = router;
