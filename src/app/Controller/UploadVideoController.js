@@ -10,7 +10,7 @@ class UploadVideoController {
 
       //updata profile(id account === author)
       const video = await UserVideos.create({
-        path: `http://localhost:8080/uploads/videos/${req.file.filename}`,
+        path: `https://back-end-myfilm-4.onrender.com/uploads/videos/${req.file.filename}`,
         filename: req.file.filename,
         nameVideo: req.body.nameVideo,
         limitedAge: req.body.limitedAge,

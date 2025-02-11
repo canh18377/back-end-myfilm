@@ -10,7 +10,7 @@ const Profile = new Schema({
     filename: { type: String, default: "" },
     path: {
       type: String,
-      default: "http://localhost:8080/uploads/images/DefaultAvatar.png",
+      default: "https://back-end-myfilm-4.onrender.com/uploads/images/DefaultAvatar.png",
     },
   },
   videos: [{ type: Schema.Types.ObjectId, ref: "UserVideos" }],
